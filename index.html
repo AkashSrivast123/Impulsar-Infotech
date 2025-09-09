@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impulsar Infotech Private Limited</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://placehold.co/1200x800/e2e8f0/6b7280?text=Impulsar+Infotech+Background');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nav-link:hover {
+            color: #4f46e5;
+        }
+
+        .btn {
+            @apply px-6 py-3 rounded-full font-semibold transition duration-300;
+        }
+
+        .btn-primary {
+            @apply bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg;
+        }
+
+        .card {
+            @apply bg-white p-6 rounded-3xl shadow-xl transition-transform duration-300 hover:scale-105;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold text-gray-800">Impulsar Infotech</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-600">About</a>
+                <a href="#services" class="nav-link text-gray-600">Services</a>
+                <a href="#contact" class="nav-link text-gray-600">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:block btn btn-primary">Get in Touch</a>
+            <button id="menu-btn" class="text-gray-600 md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About</a>
+            <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Services</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contact</a>
+            <div class="px-4 py-2">
+                <a href="#contact" class="block btn btn-primary text-center">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg py-20 md:py-32 text-center" id="home">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Propel Your Business with Innovative IT Solutions
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Impulsar Infotech provides strategic consulting, staffing, and specialized training to help you
+                    achieve technological excellence.
+                </p>
+                <a href="#services" class="btn btn-primary">Explore Our Expertise</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-16 md:py-24" id="about">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Impulsar Infotech</h2>
+                    <p class="text-gray-600 mb-4">
+                        Impulsar Infotech is a private limited company incorporated in Noida, Uttar Pradesh, specializing
+                        in business services, with a core focus on IT consulting and solutions. We are committed to
+                        helping our clients propel their business outcomes. The name "Impulsar" is a Spanish word that
+                        means "to propel," and that is the philosophy we live by.
+                    </p>
+                    <p class="text-gray-600">
+                        Our team provides end-to-end services in quality assurance (QA) and project delivery, ensuring
+                        a value-based partnership that is sustained through in-depth knowledge of our customers'
+                        business problems. We have developed a robust model that includes specialized training,
+                        strategic staffing, and high-end consulting to deliver cost-efficient, long-term resolutions.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/e2e8f0/6b7280?text=About+Us" alt="Impulsar Infotech Office"
+                        class="rounded-3xl shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16 md:py-24 bg-gray-50" id="services">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+                    We offer a comprehensive suite of IT services designed to drive innovation, improve efficiency, and
+                    propel your business forward.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">High-End Consulting</h3>
+                        <p class="text-gray-600">
+                            Our expert consultants help you develop the right IT roadmap, providing insights and
+                            strategies for your unique business challenges.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Strategic Staffing</h3>
+                        <p class="text-gray-600">
+                            We provide skilled professionals to quickly ramp up your team and ensure project success
+                            without the overhead of lengthy hiring processes.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Specialized Training</h3>
+                        <p class="text-gray-600">
+                            Our tailored training programs are designed to upskill your team on specific functional
+                            areas and bridge knowledge gaps.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Quality Assurance & Testing</h3>
+                        <p class="text-gray-600">
+                            We offer end-to-end QA and testing services to ensure the quality and reliability of your
+                            software and IT projects.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Project Delivery</h3>
+                        <p class="text-gray-600">
+                            Our team provides expert support for project delivery, from initial planning to final
+                            implementation, ensuring a smooth and successful outcome.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Transition Management</h3>
+                        <p class="text-gray-600">
+                            We assist in managing the transition of projects and processes, ensuring a seamless and
+                            efficient handover.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-16 md:py-24" id="contact">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+                    Ready to collaborate? Fill out the form below and let's discuss how we can help you propel your
+                    business.
+                </p>
+                <div class="max-w-lg mx-auto bg-white p-8 rounded-3xl shadow-xl">
+                    <form>
+                        <div class="mb-6">
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                                placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="message" rows="5"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Impulsar Infotech Private Limited. All rights reserved.</p>
+            <p class="text-sm mt-2">Registered Address: Flat No.09092, ATS Greens Paradiso, Plot No. GH03, Sector- Chi-4, Noida, Uttar Pradesh, 201308</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
